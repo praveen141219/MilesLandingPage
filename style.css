@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Questrial&display=swap");
+
+body {
+  background: #01222f;
+  font-family: "Questrial", sans-serif;
+}
+header ul {
+  margin-top: 2em;
+}
+header ul li {
+  display: inline;
+  margin: 2em;
+  position: relative;
+}
+header ul li a {
+  font-size: 1.3em;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  padding: 0.2em 0.5em;
+}
+a:hover {
+  color: #01222f;
+}
+header ul li a::after {
+  content: "";
+  width: 0%;
+  height: 1.7em;
+  position: absolute;
+  left: 0%;
+  top: -70%;
+  transition: 0.5s linear;
+  transform-origin: left;
+  z-index: -1;
+}
+header ul li a:hover:after {
+  content: "";
+  width: 100%;
+  background: white;
+  color: #01222f;
+}
+
+.imagesec {
+  position: relative;
+}
+.blank {
+  height: 80%;
+  width: 90%;
+  border: 5px solid white;
+  position: absolute;
+  top: 10%;
+  left: -70%;
+  z-index: -1;
+}
+
+.miles {
+  position: relative;
+}
+.miles h1 {
+  color: #fff;
+  font-size: 18em;
+  position: absolute;
+  top: 15%;
+  left: 9.7%;
+  text-shadow: 0 10px 20px rgba(0, 0, 0, 0.8);
+}
+
+button {
+  float: right;
+  margin-right: 4em;
+  border: none;
+  /* border-radius: 10px; */
+  color: #fff;
+  font-weight: 600;
+  font-size: 1em;
+  background: transparent;
+  padding: 0.5em 2em;
+  position: relative;
+}
+button:hover {
+  color: #01222f;
+}
+button::before {
+  content: "";
+  width: 0%;
+  height: 50%;
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  transition: 0.5s linear;
+  transform-origin: left;
+  z-index: -1;
+}
+button:hover::before {
+  content: "";
+  width: 100%;
+  background: #fff;
+  color: #01222f;
+}
+button::after {
+  content: "";
+  width: 0%;
+  height: 50%;
+  position: absolute;
+  right: 0%;
+  bottom: 0%;
+  transition: 0.5s linear;
+  transform-origin: left;
+  z-index: -1;
+}
+button:hover::after {
+  content: "";
+  width: 100%;
+  background: #fff;
+  color: #01222f;
+}
